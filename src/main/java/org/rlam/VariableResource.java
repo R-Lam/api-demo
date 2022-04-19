@@ -7,7 +7,6 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
 import org.eclipse.microprofile.config.inject.ConfigProperty;
-import org.jboss.resteasy.reactive.RestQuery;
 
 import io.quarkus.qute.Template;
 import io.quarkus.qute.TemplateInstance;
