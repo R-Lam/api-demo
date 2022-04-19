@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K8s</title>
+    <link href="https://cdn.jsdelivr.net/npm/@coreui/coreui@4.1.1/dist/css/coreui.min.css" rel="stylesheet">
+</head>
+<body style="background-color: #173169;">
+<header class="header">
+  <a class="header-brand" href="/">
+    Quarkus Demo!
+  </a>
+</header>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body align-self-center">
+                        <h5 class="card-title">Variables encontradas en application.properties</h5>
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th scope="col">Variable</th>
+                                <th scope="col">Value</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>quarkus.http.port</td>
+                                <td>{quarkusPort ?: "null"}</td>
+                            </tr>
+                            <tr>
+                                <td>quarkus.custom.welcome.message</td>
+                                <td>{customMessage ?: "null"}</td>
+                            </tr>
+                            <tr>
+                                <td>quarkus.java.version</td>
+                                <td>{javaV ?: "null"}</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body align-self-center">
+                        <h5 class="card-title">Variables encontradas en PATH de sistema</h5>
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th scope="col">Variable</th>
+                                <th scope="col">Value</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>txt_msg</td>
+                                <td>{txt ?: "null"}</td>
+                            </tr>
+                            <tr>
+                                <td>DB_URL</td>
+                                <td>{dbUrl ?: "null"}</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@coreui/coreui@4.1.1/dist/js/coreui.bundle.min.js"></script>
+</body>
+</html>
