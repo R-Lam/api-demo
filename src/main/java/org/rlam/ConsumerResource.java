@@ -8,7 +8,7 @@ import javax.ws.rs.Path;
 
 import org.eclipse.microprofile.rest.client.inject.RestClient;
 
-@Path("/api/v1/acquisitions")
+@Path("/api/v2/acquisitions")
 public class ConsumerResource {
 
     @Inject
