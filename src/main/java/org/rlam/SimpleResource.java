@@ -7,7 +7,7 @@ import java.util.Set;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 
-@Path("/api")
+@Path("/api/v1")
 public class SimpleResource {
 
     private Set<Simple> simple = Collections.newSetFromMap(Collections.synchronizedMap(new LinkedHashMap<>()));
